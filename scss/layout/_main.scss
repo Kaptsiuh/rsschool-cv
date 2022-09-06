@@ -1,0 +1,147 @@
+.main {
+    background-color: $color-background;
+}
+
+section {
+    display: flex;
+}
+
+.title {
+    padding: 20px 0;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 20px 20px;
+    width: 55%;
+    line-height: 1.4;
+}
+
+.experience {
+    img {
+        max-width: 300px;
+    }
+
+    .experience__projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project {
+        padding: 0 10px;
+        p {
+            display: flex;
+            justify-content: center;
+            color: $color-brim;
+        }
+        &:hover img {
+            transition: 0.5s;
+            opacity: 0.7;
+        }
+        &:hover p{
+            transition: 0.5s;
+            color: $color-background-black;
+        }
+    }
+}
+
+.code__content {
+    .code-purple{
+        color: #800080;
+    }
+    .code-blue{
+        color: #00008B;
+    }
+    .code-orange {
+        color: #c96720;
+    }
+}
+
+.education {
+    p {
+        a {
+            color: $color-brim;
+            &:hover {
+                color: $color-background-black;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.contacts__title {
+    background: linear-gradient(to right, $color-background 10%, $color-brim);
+}
+
+.about__content {
+    background: linear-gradient(to left, $color-background 10%, $color-brim);
+}
+
+.skills__title {
+    background: linear-gradient(to right, $color-background 10%, $color-brim);
+}
+
+.experince__content {
+    background: linear-gradient(to left, $color-background 10%, $color-brim);
+}
+.code__title {
+    background: linear-gradient(to right, $color-background 10%, $color-brim);
+}
+
+.education__contant {
+    background: linear-gradient(to left, $color-background 10%, $color-brim);
+}
+
+@media (max-width: 1190px) {
+    .experience__projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 980px) {
+    .code__content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+    }
+    .contacts__content {
+        background: linear-gradient(to left, $color-background 10%, $color-brim);
+    }
+    .about__title {
+        background: linear-gradient(to right, $color-background 10%, $color-brim);
+    }
+    .skills__content {
+        background: linear-gradient(to left, $color-background 10%, $color-brim);
+    }
+    .experince__title {
+        background: linear-gradient(to right, $color-background 10%, $color-brim);
+    }
+    .education__title {
+        background: linear-gradient(to right, $color-background 10%, $color-brim);
+    }
+}
+
+@media (max-width: $mobile-small-width) {
+    .project {
+        img {
+            width: 100%;
+        }
+    }
+    .code__content {
+        font-size: 0.8rem;
+    }
+}
