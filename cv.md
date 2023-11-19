@@ -22,7 +22,8 @@ With a fervor for front-end development that spans two years, I take genuine del
 - Next.js
 - Redux, Zustand
 - Git, GitHub
-- OOP, SOLID, KISS, DRY, YAGNI
+- OOP
+- SOLID, KISS, DRY, YAGNI
 - AWS
 - Webpack, Vite
 - Agile (Scrum, Kanban)
