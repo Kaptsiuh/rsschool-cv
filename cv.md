@@ -40,14 +40,14 @@ However, Johnny would like to know the minimal amount of people that participate
 Help Johnny by writing a function, that takes the amount of handshakes and returns the minimal amount of people needed to perform these handshakes (a pair of farmers handshake only once).
 
 ```js
-<function getParticipants(handshakes){
-    let man = 0;
-    let hand = 0;
-    for(let i = 0; hand < handshakes; i++) {
-        man += 1;
-        hand = hand + (man - 1);
-    }
-    return man;
+function getParticipants(handshakes) {
+  let man = 0;
+  let hand = 0;
+  for (let i = 0; hand < handshakes; i++) {
+    man += 1;
+    hand = hand + (man - 1);
+  }
+  return man;
 }
 ```
 
@@ -94,6 +94,6 @@ Help Johnny by writing a function, that takes the amount of handshakes and retur
 ## Languages
 
 - English (B1 Intermediate)
-- Ryssian (C2 native)
+- Russian (C2 native)
 - Belarusian (C2 native)
 - Poland (A2 Pre-Intermediate)
