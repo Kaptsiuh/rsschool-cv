@@ -1,69 +1,69 @@
 .header {
-    background-color: $color-background-black;
+  background-color: $color-background-black;
 }
 
 .header__photo {
-    max-width: 300px;
-    border-radius: 20%;
+  max-width: 300px;
+  border-radius: 20%;
 }
 
 .header__navigation {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation__link {
-    color: $color-background;
-    font-size: 2rem;
-    font-weight: 700;
-    &:hover {
-        transition: 0.5s;
-        color: $color-brim;
-    }
+  color: $color-background;
+  font-size: 2rem;
+  font-weight: 700;
+  &:hover {
+      transition: 0.5s;
+      color: $color-brim;
+  }
 }
 
 .header__main-info {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
 }
 
 .header__name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: $tablet-width) {
-    .navigation__link {
-        font-size: 1.4rem;
-    }
-    .header__main-info {
-        flex-direction: column;
-        align-items: center;
-    }
+  .navigation__link {
+      font-size: 1.4rem;
+  }
+  .header__main-info {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 @media (max-width: $mobile-big-width) {
-    .navigation {
-        flex-direction: column;
-        align-items: center;
-    }
-    .header__navigation {
-        padding: 10px 0;
-    }
+  .navigation {
+      flex-direction: column;
+      align-items: center;
+  }
+  .header__navigation {
+      padding: 10px 0;
+  }
 }
 
 @media (max-width: $mobile-small-width) {
-    .header__photo {
-        width: 100%;
-    }
-    .header__name {
-        text-align: center;
-    }
+  .header__photo {
+      width: 100%;
+  }
+  .header__name {
+      text-align: center;
+  }
 }

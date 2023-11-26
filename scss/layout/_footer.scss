@@ -1,44 +1,44 @@
 .footer {
-    background-color: $color-brim;
+  background-color: $color-brim;
 }
 .footer__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    img:hover {
-        transition: 0.3s;
-        opacity: 0.5;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  img:hover {
+      transition: 0.3s;
+      opacity: 0.5;
+  }
 }
 
 .footer__item {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .footer__img {
-    width: 100px;
+  width: 100px;
 }
 
 .footer__date {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: $tablet-width) {
-    .footer__link {
-        img {
-            width: 70%;
-        }
-    }
+  .footer__link {
+      img {
+          width: 70%;
+      }
+  }
 }
 
 @media (max-width: $mobile-big-width) {
-    .footer__links {
-        margin-left: 20px;
-    }
-    .footer-link__img {
-        display: none;
-    }
+  .footer__links {
+      margin-left: 20px;
+  }
+  .footer-link__img {
+      display: none;
+  }
 }
