@@ -353,6 +353,7 @@ section {
 }
 .experience .experience__projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .experience .project {
