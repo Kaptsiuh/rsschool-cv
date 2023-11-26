@@ -4,12 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Kaptsiuh Dzmitry</title>
 </head>
 <body>
-    <div class="lorem">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquid tempora? Dicta dolor praesentium corporis, facere placeat quidem optio reprehenderit consectetur ipsam totam perspiciatis voluptatem sint fuga laudantium magnam aliquam?
-    </div>
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li><a href="#about" class="navigation__link">About me</a></li>
+                    <li><a href="#skills" class="navigation__link">Skills</a></li>
+                    <li><a href="#contacts" class="navigation__link">Contacts</a></li>
+                    <li><a href="#code" class="navigation__link">Code</a></li>
+                    <li><a href="#experience" class="navigation__link">Experience</a></li>
+                    <li><a href="#education" class="navigation__link">Education</a></li>
+                </ul>
+            </nav>
+            <div class="header__main-info">
+                <img class="header__photo" src="./img/my_photo.jpg" alt="My photo">
+                <div class="header__name">
+                    <h1>Dzmitry Kaptsiuh</h1>
+                    <h3>Front-end developer</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__title title">Contacts</h2>
+                <p class="contacts__content content">location: Gomel, Belarus 
+                    <br> Email: dimaberry1@gmail.com 
+                    <br> Discord: Dmitriy(@Kaptsiuh)</p>
+            </section>
+            <section class="about" id="about">
+                <h2 class="about__title title">About me</h2>
+                <p class="about__content content">I work as an engineer in a brewery. I have been doing front-end development for the last year. I really enjoy working at the computer. I like to solve different problems and discover new technologies.</p>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="skills__title title">Skills</h2>
+                <p class="skills__content content">HTML
+                    <br> CSS (SCSS, BEM)
+                    <br> Figma
+                    <br> JavaScript (ES6+, Fundamentals, DOM, JSON, Asynchronous JavaScript)
+                    <br> Git/GitHub</p>
+            </section>
+            <section class="experience" id="experience">
+                <h2 class="experince__title title">Experience</h2>
+                <div class="experince__content content">
+                    <div class="experience__projects">
+                        <div class="project">
+                            <p>Momentum</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFEPRESCHOOL2022Q2/momentum/"><img src="./img/image_2022-09-02.png" alt="momentum"></a>
+                        </div>
+                        <div class="project">
+                            <p>Travel</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFEPRESCHOOL2022Q2/travel/"><img src="./img/image_2022-09-025.png" alt="travel"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="code" id="code">
+                <h2 class="code__title title">Code example</h2>
+                <pre>
+                    <code class="code__content content">
+        <span class="code-purple">function</span> <span class="code-orange">dataReverse</span>(<span class="code-orange">data</span>) {
+            <span class="code-purple">let</span> <span class="code-orange">size</span> = <span class="code-orange">8</span>;
+            <span class="code-purple">let</span> <span class="code-orange">arr</span> = [];
+            <span class="code-purple">for</span> (<span class="code-purple">let</span> <span class="code-orange">i</span> = <span class="code-orange">0</span>; <span class="code-blue">i</span> &lt; <span class="code-blue">data.length</span>; <span class="code-blue">i</span> += <span class="code-blue">size</span>) {
+                <span class="code-blue">arr.push</span>(<span class="code-blue">data.slice</span>(<span class="code-blue">i</span>, <span class="code-blue">i</span> + <span class="code-blue">arr.size</span>));
+            }
+
+            <span class="code-purple">let</span> <span class="code-orange">result</span> = <span class="code-blue">arr.reverse</span>();
+            <span class="code-purple">let</span> <span class="code-orange">a</span> = <span class="code-blue">result.join</span>();
+            <span class="code-purple">return</span> <span class="code-blue">a</span>.<span class="code-blue">split</span>(',').<span class="code-blue">map</span>(Number);
+        }
+                    </code>
+                </pre>
+            </section>
+            <section class="education" id="education">
+                <h2 class="education__title title">Education</h2>
+                <p class="education__contant content">Mogilev State University of Food Technologies (2015-2020)
+                    <br> <i>Technology of fermentation and winemaking</i> <b>Process Engineer</b>
+                    <br> RS Schools Course 2022 Q1 
+                    <br> RS Schools Course 2022 Q2 <a href="https://app.rs.school/certificate/6zof8i50">Certificate</a>
+                    <br> RS Schools Course 2022 Q3 in proccess...
+                    <br> English: A2 (I take conversation classes)</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <ul class="footer__links">
+                <li class="footer__item">
+                    <a class="footer__link" href="https://vk.com/deadnation666"><img src="./img/vk.svg" alt="vk"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://github.com/Kaptsiuh"><img src="./img/github.svg" alt="github"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer-link__img" href="https://rs.school/js/"><img class="footer__img" src="./img/rs_school_js.svg" alt="rs"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://t.me/Pussygate"><img src="./img/telegram.svg" alt="telegram"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://www.instagram.com/l_fuck_up_my_life/"><img src="./img/instagram.svg" alt="instagram"></a>
+                </li>
+            </ul>
+            <h2 class="footer__date">2022</h2>
+        </div>
+    </footer>
 </body>
 </html>
