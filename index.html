@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Kaptsiuh Dzmitry</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li><a href="#about" class="navigation__link">About me</a></li>
+                    <li><a href="#skills" class="navigation__link">Skills</a></li>
+                    <li><a href="#contacts" class="navigation__link">Contacts</a></li>
+                    <li><a href="#code" class="navigation__link">Code</a></li>
+                    <li><a href="#experience" class="navigation__link">Experience</a></li>
+                    <li><a href="#education" class="navigation__link">Education</a></li>
+                </ul>
+            </nav>
+            <div class="header__main-info">
+                <img class="header__photo" src="./img/my_photo.jpg" alt="My photo">
+                <div class="header__name">
+                    <h1>Dzmitry Kaptsiuh</h1>
+                    <h3>Front-end developer</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__title title">Contacts</h2>
+                <p class="contacts__content content">location: Łódź, Poland 
+                    <br> Email: dimaberry1@gmail.com 
+                    <br> Discord: Dmitriy(@Kaptsiuh)</p>
+            </section>
+            <section class="about" id="about">
+                <h2 class="about__title title">About me</h2>
+                <p class="about__content content">With a fervor for front-end development that spans two years, I take genuine delight in my work at the computer. I thrive on unraveling diverse challenges and delving into the realms of emerging technologies.</p>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="skills__title title">Skills</h2>
+                <p class="skills__content content">HTML, Pug
+                    <br> CSS, SCSS, Tailwind
+                    <br> JavaScript
+                    <br> TypeScript
+                    <br> React
+                    <br> Next.js
+                    <br> Redux, Zustand
+                    <br> Git, GitHub
+                    <br> OOP
+                    <br> SOLID, KISS, DRY, YAGNI
+                    <br> Webpack, Vite
+                    <br> Agile (Scrum, Kanban)
+                </p>
+            </section>
+            <section class="experience" id="experience">
+                <h2 class="experince__title title">Experience</h2>
+                <div class="experince__content content">
+                    <div class="experience__projects">
+                        <div class="project">
+                            <p>Momentum</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFEPRESCHOOL2022Q2/momentum/"><img src="./img/image_2022-09-02.png" alt="momentum"></a>
+                        </div>
+                        <div class="project">
+                            <p>Travel</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFEPRESCHOOL2022Q2/travel/"><img src="./img/image_2022-09-025.png" alt="travel"></a>
+                        </div>
+                        <div class="project">
+                            <p>Online Store</p>
+                            <a href="https://magenta-taffy-bbd959.netlify.app/"><img src="./img/2023-11-18-170751.png" alt="online_store"></a>
+                        </div>
+                        <div class="project">
+                            <p>Shelter</p>
+                            <a href="https://earnest-cupcake-0f181e.netlify.app/index.html"><img src="./img/2023-11-18-171015.png" alt="shelter"></a>
+                        </div>
+                        <div class="project">
+                            <p>Online Zoo</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFE2022Q3/online-zoo/pages/main/"><img src="./img/2023-11-18-171149.png" alt="online_zoo"></a>
+                        </div>
+                        <div class="project">
+                            <p>Pazzle Gem</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFE2022Q3/puzzle-gem/"><img src="./img/2023-11-18-171730.png" alt="pazzle_gem"></a>
+                        </div>
+                        <div class="project">
+                            <p>Music Lover</p>
+                            <a href="https://rolling-scopes-school.github.io/kaptsiuh-JSFE2022Q3/songbird/pages/start/"><img src="./img/2023-11-18-172026.png" alt="music_lover"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="code" id="code">
+                <h2 class="code__title title">Code example</h2>
+                <pre>
+                    <code class="code__content content">
+        <span class="code-purple">function</span> <span class="code-orange">dataReverse</span>(<span class="code-orange">data</span>) {
+            <span class="code-purple">let</span> <span class="code-orange">size</span> = <span class="code-orange">8</span>;
+            <span class="code-purple">let</span> <span class="code-orange">arr</span> = [];
+            <span class="code-purple">for</span> (<span class="code-purple">let</span> <span class="code-orange">i</span> = <span class="code-orange">0</span>; <span class="code-blue">i</span> &lt; <span class="code-blue">data.length</span>; <span class="code-blue">i</span> += <span class="code-blue">size</span>) {
+                <span class="code-blue">arr.push</span>(<span class="code-blue">data.slice</span>(<span class="code-blue">i</span>, <span class="code-blue">i</span> + <span class="code-blue">arr.size</span>));
+            }
+
+            <span class="code-purple">let</span> <span class="code-orange">result</span> = <span class="code-blue">arr.reverse</span>();
+            <span class="code-purple">let</span> <span class="code-orange">a</span> = <span class="code-blue">result.join</span>();
+            <span class="code-purple">return</span> <span class="code-blue">a</span>.<span class="code-blue">split</span>(',').<span class="code-blue">map</span>(Number);
+        }
+                    </code>
+                </pre>
+            </section>
+            <section class="education" id="education">
+                <h2 class="education__title title">Education</h2>
+                <p class="education__contant content">Mogilev State University of Food Technologies (2015-2020)
+                    <br> <i>Technology of fFermentation and Winemaking</i> <b>Process Engineer</b>
+                    <br> JS/FE Pre-School 2022 <a href="https://app.rs.school/certificate/6zof8i50">Certificate</a>
+                    <br> JavaScript/Front-end 2022 <a href="https://app.rs.school/certificate/ad6yi6ml">Certificate</a>
+                    <br> AWS Fundamentals 2023 <a href="https://app.rs.school/certificate/rgpaiu08">Certificate</a>
+                    <br> English: (B1 Intermediate)</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <ul class="footer__links">
+                <li class="footer__item">
+                    <a class="footer__link" href="https://vk.com/deadnation666"><img src="./img/vk.svg" alt="vk"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://github.com/Kaptsiuh"><img src="./img/github.svg" alt="github"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer-link__img" href="https://rs.school/js/"><img class="footer__img" src="./img/rs_school_js.svg" alt="rs"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://t.me/Pussygate"><img src="./img/telegram.svg" alt="telegram"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://www.instagram.com/l_fuck_up_my_life/"><img src="./img/instagram.svg" alt="instagram"></a>
+                </li>
+            </ul>
+            <h2 class="footer__date">2023</h2>
+        </div>
+    </footer>
+</body>
+</html>
